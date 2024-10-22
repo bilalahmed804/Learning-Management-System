@@ -1,0 +1,74 @@
+.subject-add-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+    padding: 20px; /* Added padding for better spacing */
+    margin-left: 220px; /* Add left margin for sidebar space */
+  }
+  
+  .subject-add-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center; /* Center text alignment */
+  }
+  
+  .subject-add-container form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px; /* Increased width for larger screens */
+    background-color: #fff; /* Added background for form */
+    padding: 20px; /* Padding inside the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .subject-add-container input {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+  }
+  
+  .subject-add-container input:focus {
+    border-color: #4CAF50; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+  }
+  
+  .radio-group {
+    margin: 20px 0;
+  }
+  
+  .radio-group h3 {
+    color: #333;
+    margin-bottom: 10px; /* Spacing below the heading */
+  }
+  
+  .radio-group label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .subject-add-container button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .subject-add-container button:hover {
+    background-color: #45a049; /* Darker shade on hover */
+  }
+  
+  .subject-add-container button:focus {
+    outline: none; /* Remove default outline on focus */
+  }
+  

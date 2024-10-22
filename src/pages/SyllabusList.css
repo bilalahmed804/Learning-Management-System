@@ -1,0 +1,69 @@
+/* Full container with space on the left */
+.add-syllabus-container {
+    display: flex;
+  justify-content: center; /* Centers the form inside the container */
+  margin-left: 200px; /* Provides 200px space on the left */
+  padding: 20px;
+  background-color: #f9f9f9;
+  min-height: 100vh; /* Makes the container take full viewport height */
+  box-sizing: border-box;
+  }
+  
+  /* Header styling */
+  .add-syllabus-container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Form styling */
+  .add-syllabus-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px; /* Limits the form width */
+  }
+  
+  /* Label and input fields */
+  .add-syllabus-form label {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .add-syllabus-form input,
+  .add-syllabus-form select,
+  .add-syllabus-form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+    background-color: #fff;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .add-syllabus-form textarea {
+    resize: vertical; /* Allows vertical resizing */
+  }
+  
+  /* Submit button styling */
+  .add-syllabus-form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    margin-top: 20px;
+  }
+  
+  /* Button hover effect */
+  .add-syllabus-form button:hover {
+    opacity: 0.9;
+  }
+  

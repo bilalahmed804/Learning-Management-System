@@ -1,0 +1,50 @@
+/* General Styling for Home Container */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f0f0f0; /* Light background for overall layout */
+  min-height: 100vh;
+  margin-left: 200px; /* Left margin to leave space for sidebar */
+}
+
+/* Styling for the Student Register Form */
+.student-register-form {
+  display: flex;
+  flex-direction: column;
+  width: 500px; /* Set the width to 500px */
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for better look */
+}
+
+/* Input and Select Styling */
+.student-register-form input,
+.student-register-form select {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%; /* Make input take full width */
+}
+
+/* Button Styling */
+.student-register-form .register-button {
+  padding: 12px;
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.student-register-form .register-button:hover {
+  background-color: #007BB5; /* Darker shade on hover */
+  opacity: 0.9;
+}

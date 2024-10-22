@@ -1,52 +1,39 @@
-import { useState } from 'react'
+import { Route, Routes } from "react-router-dom";
+import Home from './pages/Home'
 import './App.css'
+import SideOption from "./pages/sideoption";
+import Dashbord from "./pages/Dashbord";
+import StudentRegister from "./pages/StudentRegister";
+import TeacherRegister from "./pages/TeacherRegister";
+import TeacherList from "./pages/TeacherList";
+import SubjectAdd from "./pages/SubjectAdd";
+import SubjectList from "./pages/SubjectList";
+import AddSyllabus from "./pages/AddSyllabus";
+import SyllabusList from "./pages/SyllabusList";
+import Login from "./pages/Auth/LogIn";
+import CreateAccount from "./pages/Auth/CreateAccount";
 
 
 function App() {
-  const [color, setColor] = useState("lightgray")
 
   return (
     <>
-    <div className="w-full h-screen duration-200"
-    style={{backgroundColor: color}}
-    >
-      <div className="fixed flex flex-wrap justify-center bottom-12 inset-x-0 px-2">
-        <div className="flex flex-wrap justify-center gap-3 shadow-lg bg-white px-3 py-2 rounded-3xl">
-    <button
-    onClick={() => setColor("red")}
-    className="outline-none px-4 py-1 rounded-full text-white shadow-lg"
-    style={{backgroundColor: "red"}}
-    >Red</button>
-    <button
-    onClick={() => setColor("green")}
-    className="outline-none px-4 py-1 rounded-full text-white shadow-lg"
-    style={{backgroundColor: "green"}}
-    >Green</button>
-    <button
-    onClick={() => setColor("blue")}
-    className="outline-none px-4 py-1 rounded-full text-white shadow-lg"
-    style={{backgroundColor: "blue"}}
-    >Blue</button>
-    <button 
-    onClick={()=> setColor("orange")}
-    className='outline-none px-4 py-1 rounded-full text-white shadow-lg'
-    style={{backgroundColor: "orange"}}>Orange</button>
-    <button 
-    onClick={()=> setColor("yellow")}
-    className='outline-none px-4 py-1 rounded-full text-white shadow-lg'
-    style={{backgroundColor:"yellow"}}>yellow</button>
-    <button 
-    onClick={()=> setColor("purple")}
-    className='outline-none px-4 py-1 rounded-full text-white shadow-lg'
-    style={{backgroundColor:"purple"}}>Purple</button>
-    <button 
-    onClick={()=> setColor("black")}
-    className='outline-none px-4 py-1 rounded-full text-white shadow-lg'
-    style={{backgroundColor:"black"}}>Black</button>
-        
-        </div>
-      </div>
-    </div>
+    <SideOption/>
+<Routes>
+  <Route path="/" element={<Dashbord/>} />
+  <Route path='/home' element={<Home/>}/>
+  <Route path="/studentregister" element={<StudentRegister/>} />
+  <Route path="/teacher-register"  element={<TeacherRegister/>}/>
+  <Route path="/teacherlist" element={<TeacherList/>}/>
+  <Route path="/subject-add" element={<SubjectAdd/>} />
+  <Route path="/subjectlist" element={<SubjectList/>} />
+  <Route path="/addsyllabus" element={<AddSyllabus/>}/>
+  <Route path="/syllabuslist" element={<SyllabusList/>}/>
+  <Route path="/login" element={<Login/>}/>
+  <Route path="/create-account" element={<CreateAccount/>}/>
+</Routes>
+
+   
     </>
   )
 }
