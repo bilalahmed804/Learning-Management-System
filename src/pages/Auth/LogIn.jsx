@@ -3,7 +3,7 @@ import { NavLink, useNavigate } from 'react-router-dom';
 import { app,analytics} from '../../utils/firebase';
 import { getAuth, onAuthStateChanged ,signInWithEmailAndPassword} from "firebase/auth";
 
-import './Login.css';
+import './LogIn.css';
 
 
 export default function Login() {
