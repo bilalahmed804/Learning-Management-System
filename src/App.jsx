@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import Home from './pages/Home'
 import './App.css'
-import SideOption from "./pages/sideoption";
+import SideOption from "./pages/SideOption"; 
 import Dashbord from "./pages/Dashbord";
 import StudentRegister from "./pages/StudentRegister";
 import TeacherRegister from "./pages/TeacherRegister";
