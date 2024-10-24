@@ -102,7 +102,7 @@ function StudentRegister() {
         <button
           type="submit"
           className="register-button"
-          disabled={loading}  // Disable the button while loading
+          disabled={loading} 
         >
           {loading ? "Loading..." : "Add New Student"}</button>
       </form>

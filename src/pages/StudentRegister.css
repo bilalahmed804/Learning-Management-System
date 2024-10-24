@@ -29,10 +29,9 @@
   font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 5px;
-  width: 100%; /* Make input take full width */
+  width: 100%; 
 }
 
-/* Button Styling */
 .student-register-form .register-button {
   padding: 12px;
   background-color: #008CBA;
@@ -45,6 +44,6 @@
 }
 
 .student-register-form .register-button:hover {
-  background-color: #007BB5; /* Darker shade on hover */
+  background-color: #007BB5;
   opacity: 0.9;
 }

@@ -8,7 +8,7 @@ import { NavLink } from "react-router-dom";
 
 const Home = () => {
 
-  const [students, setStudents] = useState([]); // To store list of students
+  const [students, setStudents] = useState([]); 
   const [loading, setLoading] = useState(true)
 
 
@@ -16,7 +16,7 @@ const Home = () => {
     setLoading(true)
     const querySnapshot = await getDocs(collection(db, "user"));
    const studentList = querySnapshot.docs.map(doc => ({
-      id: doc.id, // Include the document ID
+      id: doc.id, 
       ...doc.data()
     }));
     setStudents(studentList)
@@ -47,7 +47,8 @@ const Home = () => {
           </tr>
         </thead>
         <tbody>
-          {students.map((student, index) => (
+          {students.filter(student => !student.teacher === true)
+          .map((student, index) => (
             <tr key={index}>
               <td>{student.firstName}</td>
               <td>{student.lastName}</td>
