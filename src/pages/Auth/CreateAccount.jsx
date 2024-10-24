@@ -56,7 +56,6 @@ export default function CreateAccount() {
             reject(error);
           },
           async () => {
-            // Get download URL
             const downloadURL = await getDownloadURL(uploadTask.snapshot.ref);
             console.log('File available at', downloadURL);
             setImageUrl(downloadURL);

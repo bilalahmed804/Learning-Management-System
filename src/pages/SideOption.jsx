@@ -4,6 +4,10 @@ import { getAuth, signOut,onAuthStateChanged } from "firebase/auth";
 
 import "./SideOption.css"
 import { useEffect, useState } from 'react';
+function toggleSidebar() {
+  const sidebar = document.querySelector('.sidebar');
+  sidebar.classList.toggle('active');
+}
 function SideOption() {
 
     const [islogIn ,setLogIn] = useState(false)
@@ -42,8 +46,12 @@ function SideOption() {
     }
 };
 
+
   return (
+    <>   
+      <div className="toggle-sidebar-btn" onClick={toggleSidebar}>☰</div>
     <div className="sidebar">
+
       <h2>LMS System (Learning Management System)</h2>
       <NavLink to="/studentregister" onClick={handleNavClick}>Register Student</NavLink>
       <NavLink to="/home">Student List</NavLink>
@@ -58,6 +66,7 @@ function SideOption() {
       ) : (
         <button className="login-button" onClick={handleLogin}>Log In</button>
       )}</div>
+  </>
   )
 }
 
